@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <amplify-authenticator>
     <h1>TodoApp</h1>
     <v-text-field v-model="name" label="Name"></v-text-field>
     <v-text-field v-model="description" label="Description"></v-text-field>
@@ -9,14 +9,15 @@
         {{ todo.name }} : {{ todo.description }}
       </li>
     </ul>
-  </div>
+    <amplify-sign-out></amplify-sign-out>
+  </amplify-authenticator>
 </template>
 
 <script>
 import { API } from 'aws-amplify'
-import { createTodo } from '~/src/graphql/mutations'
-import { listTodos } from '~/src/graphql/queries'
-import { onCreateTodo } from '~/src/graphql/subscriptions'
+import { createTodo } from '~/graphql/mutations'
+import { listTodos } from '~/graphql/queries'
+import { onCreateTodo } from '~/graphql/subscriptions'
 
 export default {
   data() {

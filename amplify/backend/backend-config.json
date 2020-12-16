@@ -16,5 +16,13 @@
         }
       }
     }
+  },
+  "auth": {
+    "nuxtamplifyf27b8844": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
   }
 }

@@ -10,6 +10,11 @@
       "StackName": "amplify-nuxtamplify-dev-111542",
       "StackId": "arn:aws:cloudformation:ap-northeast-1:767940255276:stack/amplify-nuxtamplify-dev-111542/9a5cc870-3f44-11eb-a79d-0edf7d8ef1f4",
       "AmplifyAppId": "d3l23v4k28omfw"
+    },
+    "categories": {
+      "auth": {
+        "nuxtamplifyf27b8844": {}
+      }
     }
   }
 }
